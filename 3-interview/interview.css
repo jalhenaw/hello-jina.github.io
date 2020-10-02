@@ -1,0 +1,55 @@
+h1{
+  font-family: Authentic Sans;
+  font-weight: bold;
+  font-size: 200pt;
+  color: black;
+  background-color: OrangeRed;
+
+}
+h5{
+  font-family: Authentic Sans;
+  font-weight: normal;
+  margin-left: 50px;
+}
+h6{
+  font-family: Authentic Sans;
+  font-weight: lighter;
+}
+
+h2{
+  font-family: Authentic Sans;
+  font-weight: normal;
+  color: OrangeRed;
+}
+
+p{
+font-family: Authentic Sans;
+font-weight: normal;
+color: black;
+}
+
+ol{
+  font-family: Authentic Sans;
+  font-weight: lighter;
+}
+body{
+  background-image: seashell;
+  margin: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 200px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: inherit;
+
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  outline-style: dashed;
+  outline-width: thick;
+  outline-color: DarkGreen;
+  margin: 30px;
+
+}
