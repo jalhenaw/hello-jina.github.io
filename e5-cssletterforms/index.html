@@ -12,6 +12,10 @@
   body{
   background-color: lavender;
   }
+  div:hover{
+    background-color: black;
+  }
+  /*First Letter*/
   .j-stem{
   position: absolute;
   top: 20%;
@@ -59,7 +63,7 @@
     background-color: black;
     transform: translateX(-50px);
   }
-
+/*Second Letter*/
   .j-stem-2{
     position: absolute;
     top: 20%;
@@ -107,7 +111,7 @@
     background-color: black;
     transform: translateX(-50px);
   }
-
+/*Third Letter*/
   .j-stem-3{
     position: absolute;
     top: 20%;
@@ -155,6 +159,93 @@
     background-color: black;
     transform: translateX(-50px);
   }
+
+  /* First Letter Animation */
+  .j-stem{
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.2s;
+  }
+  .j-stem:hover {
+    width: 116px;
+    cursor: pointer;
+  }
+    .top-j{
+  /*  animation-name: scaleX;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-fill-mode: none;
+  }
+  @-webkit-keyframes scalex{
+  0% {
+      transform: scalex(5);
+  }
+  50% {
+    transform: scalex(10);
+  }
+  100% {
+    transform: scalex(14);
+  }
+}*/
+  transition-property: scalex;
+  transition-duration: 2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+  transform-origin: center center;
+}
+
+  .top-j:hover {
+    transform: scalex(14);
+    cursor: pointer;
+  }
+  .j-curve-left{
+    transition-property: rotate;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+    transform-origin: center;
+  }
+  .j-curve-left:hover {
+    transform: rotate(90deg);
+    cursor: pointer;
+  }
+  /*Second Letter Animation*/
+  .j-stem-2{
+    transition-property: scaleY;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.2s;
+  }
+  .j-stem-2:hover {
+    transform: scaleY(1.5);
+    cursor: pointer;
+  }
+  .j-curve-left-2{
+    transition-propery: translateX;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+  }
+  .j-curve-left-2:hover{
+    transform: translateX(500px);
+    cursor: pointer;
+  }
+  /*Third Letter Animation*/
+  .top-j-3{
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+  }
+  .top-j-3:hover{
+    opacity: 20%;
+    cursor: pointer;
+    }
   </style>
 </head>
 
