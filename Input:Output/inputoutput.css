@@ -1,0 +1,94 @@
+body{
+  background-color: #e8e8e8;
+}
+h1{
+  font-family: Atlas Grotesk;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 20px;
+}
+p{
+  font-family: Atlas Grotesk;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 20px;
+}
+b{
+  font-family: Atlas Grotesk;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 20px;
+}
+a.button1 {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+
+    font-family: Atlas Grotesk;
+    font-weight: normal;
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: initial;
+    position: sticky;
+    left: 1100px;
+    bottom: 800px;
+    border-style: solid;
+    border-width: thin;
+}
+a.button2{
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+
+  font-family: Atlas Grotesk;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 20px;
+  text-decoration: none;
+  color: initial;
+  position: sticky;
+  left: 1400px;
+  bottom: 800px;
+  border-style: solid;
+  border-width: thin;
+}
+.container {
+  padding: 16px;
+  margin-left: 500px;
+  margin-right: 500px;
+  border: solid black 1px;
+}
+input[type=text], input[type=date] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 30px 0;
+  display: inline-block;
+  border: solid 1px;
+  background: #e8e8e8;
+}
+input[type=text]:focus, input[type=submission]:focus {
+  background-color: #e8e8e8;
+  outline: inherit;
+}
+.registerbtn {
+  background-color: #000000;
+  font-family: Larish Neue;
+  font-size: 30px;
+  color: #e8e8e8;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+}
+.registerbtn:hover {
+  background-color: #FFB800;
+}
+.signin {
+  background-color: #e8e8e8;
+  text-align: center;
+}
