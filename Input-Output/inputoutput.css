@@ -2,22 +2,44 @@ body{
   background-color: #e8e8e8;
 }
 h1{
-  font-family: Atlas Grotesk;
+  font-family: Atlas Grotesk Regular;
   font-weight: normal;
-  font-size: 20px;
-  padding: 20px;
+  font-size: 15px;
+  padding: 30px;
+}
+h2.popuptitle{
+  font-family: Larish Neue Regular;
+  font-size: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  line-height: normal;
+  padding-top: 20px;
+}
+h2.popupquestion{
+  font-family: Larish Neue Regular;
+  font-size: 35px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: normal;
 }
 p{
-  font-family: Atlas Grotesk;
+  font-family: Atlas Grotesk Regular;
   font-weight: normal;
   font-size: 15px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  line-height: normal;
 }
 b{
-  font-family: Atlas Grotesk;
+  font-family: Atlas Grotesk Regular;
   font-weight: normal;
   font-size: 15px;
-  padding: 20px;
+  text-align: left;
 }
 a.button1 {
     -webkit-appearance: button;
@@ -27,13 +49,13 @@ a.button1 {
 
     font-family: Atlas Grotesk;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 15px;
     padding: 20px;
     text-decoration: none;
     color: initial;
     position: sticky;
-    left: 1100px;
-    bottom: 800px;
+    left: 1150px;
+    bottom: 770px;
     border-style: solid;
     border-width: thin;
 }
@@ -45,13 +67,13 @@ a.button2{
 
   font-family: Atlas Grotesk;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 15px;
   padding: 20px;
   text-decoration: none;
   color: initial;
   position: sticky;
   left: 1400px;
-  bottom: 800px;
+  bottom: 770px;
   border-style: solid;
   border-width: thin;
 }
@@ -60,6 +82,8 @@ a.button2{
   margin-left: 500px;
   margin-right: 500px;
   border: solid black 1px;
+  text-align: left;
+  vertical-align: middle;
 }
 input[type=text], input[type=date] {
   width: 90%;
@@ -75,7 +99,7 @@ input[type=text]:focus, input[type=submission]:focus {
 }
 .registerbtn {
   background-color: #000000;
-  font-family: Larish Neue;
+  font-family: Larish Neue Regular;
   font-size: 30px;
   color: #e8e8e8;
   padding: 16px 20px;
@@ -91,4 +115,48 @@ input[type=text]:focus, input[type=submission]:focus {
 .signin {
   background-color: #e8e8e8;
   text-align: center;
+}
+.lightbox {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .5)
+}
+/*.toolbarLB {
+  text-align: right;
+  padding: 3px;
+}
+/*.closeLB {
+  color: black;
+  cursor: pointer;
+  font-family: Pangram ExtraLight;
+  font-size: 50px;
+  padding: 15px;
+}*/
+/*.lightbox*/.iframeContainer{
+  vertical-align: middle;
+  background: #CCC;
+  width: 45%;
+  height: 50%;
+  text-align: left;
+  border: solid 1px black;
+}
+.x{
+  font-family: Gotham Rounded Light;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: right;
+  transform: translateX(-770px) translateY(-350px) scale(3);
+  cursor: pointer;
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
 }

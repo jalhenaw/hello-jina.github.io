@@ -9,6 +9,12 @@
         <link href="inputoutput.css" type="text/css" rel="stylesheet">
 
   <h1>microaggressions</h1>
+  <script type="text/javascript">
+  lightBoxClose = function() {
+document.querySelector(".lightbox").classList.add("closed");
+}
+</script>
+
   <a href="index.html" class="button1">submit a microaggression</a>
   <a href="view.html" class="button2">view microaggressions</a>
   <form action="action_page.php">
@@ -25,6 +31,27 @@
     <input type="text" placeholder="Write about your experience…" name="submission" id="submission" required>
     <button type="submit" class="registerbtn">Submit</button>
 
+    <div class="lightbox">
+    <div class="iframeContainer">
+      <h2 class="popuptitle">microaggression</h2>
+      <p>/ˌmīkrōəˈɡreSHən/<br>
+          noun<br>
+          a statement, action, or incident regarded as an instance of indirect, subtle, or unintentional discrimination against members of a marginalized group such as a racial or ethnic minority.</p>
+      <h2 class="popupquestion">Have you ever experienced a microaggression? Highlight your experience by submitting here!</h2>
+    <div class="x">x</div>
+
+    <script>
+  /*  $('.lightbox').click (function (){
+      $('.lightbox').addClass('show');
+    });
+*/
+    $('.x').click (function (){
+      $('.iframeContainer').addClass('hide');
+    });
+    </script>
+
+
+  </div>
 </form>
 </head>
 </html>
