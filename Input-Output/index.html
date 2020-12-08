@@ -29,7 +29,7 @@ document.querySelector(".lightbox").classList.add("closed");
 
     <label for="submission"><b>Share Your Experience</b></label>
     <input type="text" placeholder="Write about your experience…" name="submission" id="submission" required>
-    <button type="submit" class="registerbtn">Submit</button>
+    <button type="submit" class="registerbtn" a href="view.html">Submit</button>
 
     <div class="lightbox">
     <div class="iframeContainer">
@@ -38,7 +38,7 @@ document.querySelector(".lightbox").classList.add("closed");
           noun<br>
           a statement, action, or incident regarded as an instance of indirect, subtle, or unintentional discrimination against members of a marginalized group such as a racial or ethnic minority.</p>
       <h2 class="popupquestion">Have you ever experienced a microaggression? Highlight your experience by submitting here!</h2>
-    <div class="x">x</div>
+    <div class="x">&times;</div>
 
     <script>
   /*  $('.lightbox').click (function (){
@@ -46,12 +46,10 @@ document.querySelector(".lightbox").classList.add("closed");
     });
 */
     $('.x').click (function (){
-      $('.iframeContainer').addClass('hide');
+      $('.x').toggleClass('.xclose');
     });
     </script>
 
-
-  </div>
 </form>
 </head>
 </html>

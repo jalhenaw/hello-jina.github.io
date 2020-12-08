@@ -1,16 +1,19 @@
 <!DOCTYPE html>
+<html>
 <head>
   <meta charset="utf-8"><!--charset: character encoding capable of encoding all characters on the web  -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--for browser compatibility: choose rendering engine to view the page in an correct view (for old ver. IE)  -->
-        <title>TattooLand</title>
+        <title>TATTOOLAND</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width"><!--the browser will (probably) render the width of the page at the width of its own screen -->
-<h1> TATTOOLAND</h1>
-  <body>
-    <div class="img1" id="gentlepokes"</div>
-      <a href="https://www.instagram.com/p/BqX_MLPFsFn/" target="_blank">
+
+<body>
+    <h1> TATTOOLAND</h1>
+    <div class="img1" onclick="togglepopup()">;
+      <a href="#">
         <img src="img/tattoopictures_gentlepokes2.png" alt="gentlepokes" style="width:300px; height:300px; position: absolute; top: 20px; left: 500px;">
       </a>
+
 
     <a href="https://www.instagram.com/p/CF2-Ds5BFYN/" target="_blank">
       <img src="img/tattoopictures_alitbruce.png" alt="alitbruce" style="width:200px; height:500px; position: absolute; top: 20px; left: 1000px;">
@@ -59,31 +62,135 @@
 <a href="about.html" target="_self">What is this?</a>
 </p>
 
-    <div class="popupgentlepokes"> <strong>Name:</strong> Unknown <br> <strong>Artist:</strong> Em,they/them <br> <strong>Location:</strong> Time Being Tattoo <br>  Chicago, IL <br> <strong>Placement:</strong> right thigh <br> <strong>Description:</strong> slipper twinkly cloud brain</div>
-    <div class="x">x</div>
+    <div class="popupgentlepokes">
+      <div class="info">
+      <h2>@gentlepokes</h2>
+      <strong>Name:</strong> Unknown <br>
+      <strong>Artist:</strong> Em,they/them <br>
+      <strong>Location:</strong> Time Being Tattoo<br>
+      Chicago, IL <br> <strong>Placement:</strong>right thigh <br>
+      <strong>Description:</strong> slipper twinkly cloud brain</div>
+    </div>
+    <a class="close" href="#popupgentlepokes">&times;</a>
 
-    <div class="popupalitbruce"><strong>Name:</strong> Sarah Smith <br> <strong>Artist:</strong> Ali T. Bruce, she/her <br> <strong>Location:</strong> Vancouver, BC <br> <strong>Placement: </strong>left upper arm <br> <strong> Description:</strong> flaming flower</div>
+    <div class="popupalitbruce">
+      <div class="info">
+        <h2>@alitbruce</h2>
+        <strong>Name:</strong> Sarah Smith <br>
+        <strong>Artist:</strong> Ali T. Bruce, she/her <br>
+        <strong>Location:</strong> Vancouver, BC <br>
+        <strong>Placement: </strong>left upper arm <br>
+        <strong> Description:</strong> flaming flower</div>
+    </div>
 
-    <div class="popupbabymumtattooerx"><strong>Name:</strong> Berlinderella aka ACAB Doll <br> <strong>Artist: </strong>babymumtattooerx <br> <strong>Location:</strong> FL <br><strong> Placement: </strong>right temple <br> <strong>Description:</strong> pure luxury</div>
+    <div class="popupbabymumtattooerx">
+      <div class="info">
+        <h2>@babymumtattooerx</h2>
+        <strong>Name:</strong> Berlinderella aka ACAB Doll <br>
+        <strong>Artist: </strong>babymumtattooerx <br>
+        <strong>Location:</strong> FL <br>
+        <strong>Placement: </strong>right temple <br>
+        <strong>Description:</strong> pure luxury</div>
+    </div>
 
-    <div class="popupcarsonfoleynyc"><strong>Name:</strong> Unknown <br><strong>Artist:</strong> Carson Foley <br><strong> Location:</strong> Los Angeles, CA <br><strong> Placement:</strong> right upper arm <br><strong> Description:</strong> none</div>
+    <div class="popupcarsonfoleynyc">
+      <div class="info">
+      <h2>@carsonfoleynyc</h2>
+      <strong>Name:</strong> Unknown <br>
+      <strong>Artist:</strong> Carson Foley <br>
+      <strong> Location:</strong> Los Angeles, CA <br>
+      <strong> Placement:</strong> right upper arm <br>
+      <strong> Description:</strong> none</div>
+    </div>
 
-    <div class="popupcaspargray"><strong>Name:</strong> Tia Rexx <br> <strong>Artist:</strong> Caspar Gray <br> <strong>Location:</strong> London, UK <br><strong> Placement:</strong> abdomen <br> <strong>Description:</strong> white vine </div>
+    <div class="popupcaspargray">
+      <div class="info">
+        <h2>@caspar_gray</h2>
+        <strong>Name:</strong> Tia Rexx <br>
+        <strong>Artist:</strong> Caspar Gray <br>
+        <strong>Location:</strong> London, UK <br>
+        <strong> Placement:</strong> abdomen <br>
+        <strong>Description:</strong> white vine </div>
+      </div>
 
-    <div class="popupgirlknewyork"><strong>Name:</strong> Unknown <br> <strong>Artist:</strong> Mira Mariah <br> <strong>Location:</strong> GirlKnewYork, New York, NY <br> <strong>Placement:</strong> left upper arm <br><strong> Description:</strong> cowgirl </div>
+    <div class="popupgirlknewyork">
+      <div class="info">
+        <h2>@girlknewyork</h2>
+        <strong>Name:</strong> Unknown <br>
+        <strong>Artist:</strong> Mira Mariah <br>
+        <strong>Location:</strong> GirlKnewYork, New York, NY <br>
+        <strong>Placement:</strong> left upper arm <br>
+        <strong> Description:</strong> cowgirl </div>
+      </div>
 
-    <div class="popuphandpushed"><strong>Name:</strong> Sarah Ball <br><strong> Artist:</strong> Melina Mans <br> <strong>Location:</strong> Leslieville, Toronto <br> <strong>Placement:</strong> abdomen <br> <strong>Description:</strong> colored tattoo </div>
+    <div class="popuphandpushed">
+      <div class="info">
+        <h2>@handpushed</h2>
+        <strong>Name:</strong> Sarah Ball <br>
+        <strong> Artist:</strong> Melina Mans <br>
+        <strong>Location:</strong> Leslieville, Toronto <br>
+        <strong>Placement:</strong> abdomen <br>
+        <strong>Description:</strong> colored tattoo </div>
+      </div>
 
-    <div class="popupmountyear"><strong>Name:</strong> Unknown <br> <strong>Artist:</strong> Mountain, they/them <br> <strong>Location:</strong> Brooklyn, NY <br> <strong>Placement:</strong> abdomen <br> <strong>Description:</strong> colored tattoo </div>
+    <div class="popupmountyear">
+      <div class="info">
+        <h2>@mount_year</h2>
+        <strong>Name:</strong> Unknown <br>
+        <strong>Artist:</strong> Mountain, they/them <br>
+        <strong>Location:</strong> Brooklyn, NY <br>
+        <strong>Placement:</strong> abdomen <br>
+        <strong>Description:</strong> colored tattoo </div>
+      </div>
 
-    <div class="popupmrblue"><strong>Name:</strong> Kristy Lawrence <br> <strong>Artist:</strong> Lou Mejia <br> <strong>Location:</strong> Brooklyn, NY <br> <strong>Placement:</strong> right hand <br> <strong>Description:</strong> floral hand composition </div>
+    <div class="popupmrblue">
+      <div class="info">
+        <h2>@______mr.blue_______</h2>
+        <strong>Name:</strong> Kristy Lawrence <br>
+        <strong>Artist:</strong> Lou Mejia <br>
+        <strong>Location:</strong> Brooklyn, NY <br>
+        <strong>Placement:</strong> right hand <br>
+        <strong>Description:</strong> floral hand composition </div>
+      </div>
 
-    <div class="popuppangink"><strong>Name:</strong> Shaine <br><strong> Artist:</strong> Unknown <br> <strong>Location:</strong> Bay Area, CA <br> <strong>Placement:</strong> upper right thigh <br> <strong>Description:</strong> flame </div>
+    <div class="popuppangink">
+      <dic class="info">
+        <h2>@pang.ink</h2>
+        <strong>Name:</strong> Shaine <br>
+        <strong> Artist:</strong> Unknown <br>
+        <strong>Location:</strong> Bay Area, CA <br>
+        <strong>Placement:</strong> upper right thigh <br>
+        <strong>Description:</strong> flame </div>
+      </div>
 
-    <div class="popupscratchpepper"><strong>Name:</strong> Unknown <br> <strong>Artist:</strong> Charlie Pepper <br> <strong>Location:</strong> Bushwick, NY <br> <strong>Placement:</strong> upper left thigh <br> <strong>Description:</strong> hard to kill </div>
+    <div class="popupscratchpepper">
+      <div class="info">
+        <h2>@scratch.pepper</h2>
+        <strong>Name:</strong> Unknown <br>
+        <strong>Artist:</strong> Charlie Pepper <br>
+        <strong>Location:</strong> Bushwick, NY <br>
+        <strong>Placement:</strong> upper left thigh <br>
+        <strong>Description:</strong> hard to kill </div>
+      </div>
 
-    <div class="popupstickandchoke"><strong>Name:</strong> Alice <br> <strong>Artist:</strong> Sophia, she/her <br><strong> location: </strong>Peckham, UK <br> <strong>Placement:</strong> upper left thigh <br><strong> Description:</strong> Bouguereau </div>
+    <div class="popupstickandchoke">
+      <div class-"info">
+        <h2>stickandchoke</h2>
+        <strong>Name:</strong> Alice <br>
+        <strong>Artist:</strong> Sophia, she/her <br>
+        <strong> location: </strong>Peckham, UK <br>
+        <strong>Placement:</strong> upper left thigh <br>
+        <strong> Description:</strong> Bouguereau </div>
+      </div>
+
+      <script>    //collophon
+        $(".x").click(function(){
+            $(".x").toggleClass("xClose");
+        })
+    </script>
   </body>
+</head>
+</html>
 
     <style type="text/css">
     img{
@@ -92,12 +199,27 @@
       h1{
         font-family: standard graf,fantasy;
         font-size: 65px;
-        color: #e8e8e8;
+        color: transparent;
         -webkit-text-stroke: 0.1px black;
+        letter-spacing: 0px;
         margin: 40px;
       }
+      h2{
+        font-family: IBM Plex Mono;
+        font-size: 20px;
+        color: #d24f2c;
+        font-style: italic;
+        font-weight: light;
+      }
+      h3{
+        font-family: IBM Plex Mono;
+        font-size: 20px;
+        color: #d24f2c;
+        font-style: italic;
+        font-weight: lighter;
+      }
       body{
-      font-family: monospace;
+      font-family: IBM Plex mono;
       font-size: 20px;
       background-color: #e8e8e8;
       }
@@ -111,8 +233,8 @@
         text-decoration: none;
       }
       .popupgentlepokes{
-        height: 200px;
-        width: 300px;
+        height: 260px;
+        width: 350px;
         padding: 30px;
         background-color: #e8e8e8;
         border-style: solid;
@@ -122,12 +244,19 @@
         display: block;
         transform: translateY(-1800px) translateX(700px);
       }
-      .x{
+      .close{
+        position: absolute;
         color: black;
-        transform: translatey(-2050px) translatex(1030px);
+        transform: translatey(-2105px) translatex(1075px);
+      }
+      .close:target{
+        display: none;
+        opacity: 0;
+        max-width: 0%;
+        width: 0%;
       }
       .popupalitbruce{
-        height: 120px;
+        height: 190px;
         width: 350px;
         padding: 30px;
         background-color: #e8e8e8;
@@ -136,10 +265,10 @@
         border-color: black;
         border-radius: 10%;
         display: block;
-        transform: translateY(-1900px) translateX(1130px);
+        transform: translateY(-2000px) translateX(1130px);
       }
       .popupbabymumtattooerx{
-        height: 150px;
+        height: 230px;
         width: 300px;
         padding: 30px;
         background-color: #e8e8e8;
@@ -151,7 +280,7 @@
         transform: translateY(-2200px) translateX(300px);
       }
       .popupcarsonfoleynyc{
-        height: 150px;
+        height: 240px;
         width: 300px;
         padding: 30px;
         background-color: #e8e8e8;
@@ -160,10 +289,10 @@
         border-color: black;
         border-radius: 10%;
         display: block;
-        transform: translateY(-1400px) translateX(300px);
+        transform: translateY(-1500px) translateX(300px);
       }
       .popupcaspargray{
-        height: 150px;
+        height: 200px;
         width: 280px;
         padding: 30px;
         background-color: #e8e8e8;
@@ -172,10 +301,10 @@
         border-color: black;
         border-radius: 10%;
         display: block;
-        transform: translateY(-2500px) translateX(1190px);
+        transform: translateY(-2750px) translateX(1150px);
       }
       .popupgirlknewyork{
-        height: 150px;
+        height: 230px;
         width: 310px;
         padding: 30px;
         background-color: #e8e8e8;
@@ -184,10 +313,10 @@
         border-color: black;
         border-radius: 10%;
         display: block;
-        transform: translateY(-2500px) translateX(800px);
+        transform: translateY(-2750px) translateX(800px);
       }
       .popuphandpushed{
-        height: 150px;
+        height: 250px;
         width: 270px;
         padding: 30px;
         background-color: #e8e8e8;
@@ -196,10 +325,10 @@
         border-color: black;
         border-radius: 10%;
         display: block;
-        transform: translateY(-1850px) translateX(1200px);
+        transform: translateY(-2300px) translateX(1200px);
       }
       .popupmountyear{
-        height: 150px;
+        height: 250px;
         width: 280px;
         padding: 30px;
         background-color: #e8e8e8;
@@ -208,10 +337,10 @@
         border-color: black;
         border-radius: 10%;
         display: block;
-        transform: translateY(-2700px) translateX(250px);
+        transform: translateY(-3250px) translateX(200px);
       }
       .popupmrblue{
-        height: 150px;
+        height: 220px;
         width: 280px;
         padding: 30px;
         background-color: #e8e8e8;
@@ -220,10 +349,10 @@
         border-color: black;
         border-radius: 10%;
         display: block;
-        transform: translateY(-2690px) translateX(550px);
+        transform: translateY(-3350px) translateX(550px);
       }
       .popuppangink{
-        height: 130px;
+        height: 190px;
         width: 340px;
         padding: 30px;
         background-color: #e8e8e8;
@@ -232,10 +361,10 @@
         border-color: black;
         border-radius: 10%;
         display: block;
-        transform: translateY(-2900px) translateX(1080px);
+        transform: translateY(-3550px) translateX(1080px);
       }
       .popupscratchpepper{
-        height: 150px;
+        height: 250px;
         width: 270px;
         padding: 30px;
         background-color: #e8e8e8;
@@ -244,10 +373,10 @@
         border-color: black;
         border-radius: 10%;
         display: block;
-        transform: translateY(-3300px) translateX(1200px);
+        transform: translateY(-4090px) translateX(1200px);
       }
       .popupstickandchoke{
-        height: 150px;
+        height: 230px;
         width: 280px;
         padding: 30px;
         background-color: #e8e8e8;
@@ -256,7 +385,7 @@
         border-color: black;
         border-radius: 10%;
         display: block;
-        transform: translateY(-3000px) translateX(800px);
+        transform: translateY(-3900px) translateX(800px);
       }
       /*.popup {
         position: relative;
@@ -306,5 +435,3 @@ fadeIn 1s;
 }
 */
       </style>
-
-</head>

@@ -107,6 +107,13 @@ img{
   border: solid black 1px;
   display: block;
 }
+.inputcard{
+  padding: 30px;
+  text-align: left;
+  background-color: #e8e8e8;
+  border: solid black 1px;
+  display: block;
+}
 
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
@@ -116,3 +123,32 @@ img{
     margin-bottom: 20px;
   }
 }
+
+input[type=text], input[type=date] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 30px 0;
+  display: inline-block;
+  border: solid 1px;
+  background: #e8e8e8;
+}
+input[type=text]:focus, input[type=submission]:focus {
+  background-color: #e8e8e8;
+  outline: inherit;
+}
+.registerbtn {
+  background-color: #000000;
+  font-family: Larish Neue Regular;
+  font-size: 30px;
+  color: #e8e8e8;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+}
+.registerbtn:hover {
+  background-color: #FFB800;
+  border: solid 1px black;
+  color: black;
