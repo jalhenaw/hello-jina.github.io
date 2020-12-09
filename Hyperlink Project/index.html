@@ -9,10 +9,8 @@
 
 <body>
     <h1> TATTOOLAND</h1>
-    <div class="img1" onclick="togglepopup()">;
-      <a href="#">
-        <img src="img/tattoopictures_gentlepokes2.png" alt="gentlepokes" style="width:300px; height:300px; position: absolute; top: 20px; left: 500px;">
-      </a>
+    <div class="img1" onclick="Open(popupgentlepokes);">
+        <img src="img/tattoopictures_gentlepokes2.png" alt="gentlepokes" style="width:300px; height:300px; position: absolute; top: 20px; left: 500px;"></div>
 
 
     <a href="https://www.instagram.com/p/CF2-Ds5BFYN/" target="_blank">
@@ -62,8 +60,7 @@
 <a href="about.html" target="_self">What is this?</a>
 </p>
 
-    <div class="popupgentlepokes">
-      <div class="info">
+    <div class="popupgentlepokes" <span onclick="" class="closebtn">&times; </span>
       <h2>@gentlepokes</h2>
       <strong>Name:</strong> Unknown <br>
       <strong>Artist:</strong> Em,they/them <br>
@@ -71,9 +68,9 @@
       Chicago, IL <br> <strong>Placement:</strong>right thigh <br>
       <strong>Description:</strong> slipper twinkly cloud brain</div>
     </div>
-    <a class="close" href="#popupgentlepokes">&times;</a>
 
-    <div class="popupalitbruce">
+
+    <div class="popupalitbruce" class="closebtn">&times;
       <div class="info">
         <h2>@alitbruce</h2>
         <strong>Name:</strong> Sarah Smith <br>
@@ -83,7 +80,7 @@
         <strong> Description:</strong> flaming flower</div>
     </div>
 
-    <div class="popupbabymumtattooerx">
+    <div class="popupbabymumtattooerx" class="closebtn">&times;
       <div class="info">
         <h2>@babymumtattooerx</h2>
         <strong>Name:</strong> Berlinderella aka ACAB Doll <br>
@@ -93,7 +90,7 @@
         <strong>Description:</strong> pure luxury</div>
     </div>
 
-    <div class="popupcarsonfoleynyc">
+    <div class="popupcarsonfoleynyc" class="closebtn">&times;
       <div class="info">
       <h2>@carsonfoleynyc</h2>
       <strong>Name:</strong> Unknown <br>
@@ -103,7 +100,7 @@
       <strong> Description:</strong> none</div>
     </div>
 
-    <div class="popupcaspargray">
+    <div class="popupcaspargray" class="closebtn">&times;
       <div class="info">
         <h2>@caspar_gray</h2>
         <strong>Name:</strong> Tia Rexx <br>
@@ -113,7 +110,7 @@
         <strong>Description:</strong> white vine </div>
       </div>
 
-    <div class="popupgirlknewyork">
+    <div class="popupgirlknewyork" class="closebtn">&times;
       <div class="info">
         <h2>@girlknewyork</h2>
         <strong>Name:</strong> Unknown <br>
@@ -123,7 +120,7 @@
         <strong> Description:</strong> cowgirl </div>
       </div>
 
-    <div class="popuphandpushed">
+    <div class="popuphandpushed" class="closebtn">&times;
       <div class="info">
         <h2>@handpushed</h2>
         <strong>Name:</strong> Sarah Ball <br>
@@ -133,7 +130,7 @@
         <strong>Description:</strong> colored tattoo </div>
       </div>
 
-    <div class="popupmountyear">
+    <div class="popupmountyear" class="closebtn">&times;
       <div class="info">
         <h2>@mount_year</h2>
         <strong>Name:</strong> Unknown <br>
@@ -143,7 +140,7 @@
         <strong>Description:</strong> colored tattoo </div>
       </div>
 
-    <div class="popupmrblue">
+    <div class="popupmrblue" class="closebtn">&times;
       <div class="info">
         <h2>@______mr.blue_______</h2>
         <strong>Name:</strong> Kristy Lawrence <br>
@@ -153,7 +150,7 @@
         <strong>Description:</strong> floral hand composition </div>
       </div>
 
-    <div class="popuppangink">
+    <div class="popuppangink" class="closebtn">&times;
       <dic class="info">
         <h2>@pang.ink</h2>
         <strong>Name:</strong> Shaine <br>
@@ -163,7 +160,7 @@
         <strong>Description:</strong> flame </div>
       </div>
 
-    <div class="popupscratchpepper">
+    <div class="popupscratchpepper" class="closebtn">&times;
       <div class="info">
         <h2>@scratch.pepper</h2>
         <strong>Name:</strong> Unknown <br>
@@ -173,7 +170,7 @@
         <strong>Description:</strong> hard to kill </div>
       </div>
 
-    <div class="popupstickandchoke">
+    <div class="popupstickandchoke" class="closebtn">&times;
       <div class-"info">
         <h2>stickandchoke</h2>
         <strong>Name:</strong> Alice <br>
@@ -183,10 +180,10 @@
         <strong> Description:</strong> Bouguereau </div>
       </div>
 
-      <script>    //collophon
-        $(".x").click(function(){
-            $(".x").toggleClass("xClose");
-        })
+      <!-- <script>    //collophon -->
+        <!-- (".x").click(function(){ -->
+            <!-- $(".x").toggleClass("xClose"); -->
+        <!-- }) -->
     </script>
   </body>
 </head>
@@ -232,6 +229,15 @@
         color: black;
         text-decoration: none;
       }
+      a:hover{
+        color: #d24f2c;
+      }
+      .closebtn{
+        position: absolute;
+        color: black;
+        font-size: 3px;
+        cursor: pointer;
+      }
       .popupgentlepokes{
         height: 260px;
         width: 350px;
@@ -244,17 +250,12 @@
         display: block;
         transform: translateY(-1800px) translateX(700px);
       }
-      .close{
-        position: absolute;
-        color: black;
-        transform: translatey(-2105px) translatex(1075px);
-      }
-      .close:target{
+/*      .close:target{
         display: none;
         opacity: 0;
         max-width: 0%;
         width: 0%;
-      }
+      }*/
       .popupalitbruce{
         height: 190px;
         width: 350px;
